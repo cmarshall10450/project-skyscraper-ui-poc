@@ -20,7 +20,7 @@ const InspectorSidebar = ({ selectedNode }) => {
 	}
 
 	return (
-		<Sidebar isOpen={true} title="Inspector">
+		<Sidebar isOpen={true} title="Inspector" showToggle={false}>
 			{isNodeSelected ? <NodeSelectedForm /> : null}
 		</Sidebar>
 	)

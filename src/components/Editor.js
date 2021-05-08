@@ -43,10 +43,10 @@ const Editor = () => {
 			<Grid.Column size="2" className="editor-container">
 				<ComponentSidebar addNodeFn={addNewNode} />
 			</Grid.Column>
-			<Grid.Column size="7" className="editor-container">
+			<Grid.Column size="8" className="editor-container">
 				<Diagram schema={schema} onChange={onChange} />
 			</Grid.Column>
-			<Grid.Column size="3" className="editor-container">
+			<Grid.Column size="2" className="editor-container">
 				<InspectorSidebar selectedNode={selectedNode} />
 			</Grid.Column>
 		</Grid>

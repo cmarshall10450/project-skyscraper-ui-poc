@@ -5,15 +5,21 @@ import components from '../config/editor-components.config.json'
 
 const ComponentSidebar = ({ addNodeFn }) => {
 	const componentsList = Object.entries(components).map(
-		([namespace, namespaceComponents]) => (
+		([namespace, namespaceData]) => (
 			<Sidebar.Collapsible text={namespace} key={namespace}>
-				{namespaceComponents.map((component) => (
-					<Sidebar.Item
-						text={component.label}
-						onClick={() => addNodeFn(component)}
-						key={`${namespace}/${component.name}`}
-					/>
-				))}
+				{namespaceData.components.map((component) => {
+					const componentWithColor = {
+						...component,
+						nodeColor: namespaceData.nodeColor,
+					}
+					return (
+						<Sidebar.Item
+							text={component.label}
+							onClick={() => addNodeFn(componentWithColor)}
+							key={`${namespace}/${component.name}`}
+						/>
+					)
+				})}
 			</Sidebar.Collapsible>
 		)
 	)
