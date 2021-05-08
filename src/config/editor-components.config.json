@@ -1,0 +1,36 @@
+{
+	"Microsoft.Compute": [
+		{
+			"label": "Virtual Machine",
+			"name": "virtualMachine",
+			"iconPath": ""
+		},
+		{
+			"label": "Public IP Address",
+			"name": "publicIpAddress",
+			"iconPath": ""
+		}
+	],
+	"Microsoft.Network": [
+		{
+			"label": "VNet",
+			"name": "virtualNetwork",
+			"iconPath": ""
+		},
+		{
+			"label": "Subnet",
+			"name": "virtualNetwork/subnet",
+			"iconPath": ""
+		},
+		{
+			"label": "Route Table",
+			"name": "routeTable",
+			"iconPath": ""
+		},
+		{
+			"label": "Route",
+			"name": "routeTable/route",
+			"iconPath": ""
+		}
+	]
+}
